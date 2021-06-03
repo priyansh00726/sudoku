@@ -1,0 +1,71 @@
+#mainScreen {
+    -fx-background-color: linear-gradient(to top left, #c7c7c7, #c0c0c0);
+}
+
+#topBar {
+    -fx-background-color: linear-gradient(to bottom right, #060e1a, #788394);
+    -fx-alignment: center;
+}
+
+#headLabel {
+    -fx-background-color: null;
+    -fx-font-size: 2.2em;
+    -fx-text-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-family: serif;
+}
+
+.sudokuMatrix {
+    -fx-border-radius: 0.2em;
+    -fx-background-color: #efefef;
+    -fx-cursor: hand;
+    -fx-grid-lines-visible: true;
+}
+
+.diagonalSudokuCell {
+    -fx-background-color: #b2b2b2;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-font-family: FreeMono;
+}
+
+.sudokuCell {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-font-family: FreeMono;
+}
+
+.button {
+     -fx-text-fill: white;
+     -fx-font-size: 1.1em;
+     -fx-font-family: sans-serif;
+     -fx-background-color: #788394;
+     -fx-cursor: hand;
+     -fx-effect: dropshadow(two-pass-box, #060e1a, 10, 0.2, 0, 0);
+}
+
+.button:hover {
+    -fx-background-color: #ededed;
+    -fx-text-fill: black;
+}
+
+/*
+#submitButton, #resetButton, #deleteCell, #backToMenu{
+    -fx-effect: null;
+    -fx-background-color: #b2b2b2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(two-pass-box, #060e1a, 10, 0.2, 0, 0);
+}
+*/
+
+.frameButtons {
+    -fx-effect: null;
+    -fx-background-color: #b2b2b2;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(two-pass-box, #060e1a, 10, 0.2, 0, 0);
+}
+
+.sudokuCell:hover, .diagonalSudokuCell:hover, .buttonFrame:hover , .frameButtons:hover {
+    -fx-background-color: #4e4f52;
+    -fx-text-fill: white;
+}
